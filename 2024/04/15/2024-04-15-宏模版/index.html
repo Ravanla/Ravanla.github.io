@@ -1,0 +1,444 @@
+<!DOCTYPE html><html class="hide-aside" lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>2024-04-15-宏模版 | Ravanla</title><meta name="author" content="Ravanla,1285644869@qq.com"><meta name="copyright" content="Ravanla"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#18171d"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="2024-04-15-宏模版"><meta name="application-name" content="2024-04-15-宏模版"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#18171d"><meta property="og:type" content="article"><meta property="og:title" content="2024-04-15-宏模版"><meta property="og:url" content="https://ravanla.github.io/2024/04/15/2024-04-15-%E5%AE%8F%E6%A8%A1%E7%89%88/index.html"><meta property="og:site_name" content="Ravanla"><meta property="og:description" content="随机命名在Sheet1中遍历找到F列的值（fValue），这些值都是经过筛选的SpecialCells，如下代码 12345678910111213141516171819202122232425262728function test()&amp;#123;    &amp;#x2F;&amp;#x2F; B列应用筛选，排除空白行    le"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://wowmac.oss-cn-shenzhen.aliyuncs.com/ArchLinux.jpg"><meta property="article:author" content="Ravanla"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://wowmac.oss-cn-shenzhen.aliyuncs.com/ArchLinux.jpg"><meta name="description" content="随机命名在Sheet1中遍历找到F列的值（fValue），这些值都是经过筛选的SpecialCells，如下代码 12345678910111213141516171819202122232425262728function test()&amp;#123;    &amp;#x2F;&amp;#x2F; B列应用筛选，排除空白行    le"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="https://ravanla.github.io/2024/04/15/2024-04-15-%E5%AE%8F%E6%A8%A1%E7%89%88/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: undefined,
+  postHeadAiDescription: undefined,
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":null},
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: Ravanla","link":"链接: ","source":"来源: Ravanla","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: {"enable":true,"delay":100,"shiftDelay":200},
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'Ravanla',
+  title: '2024-04-15-宏模版',
+  postAI: '',
+  pageFillDescription: '随机命名, 全选部分, 自定义SKU, 单元格式设置填充, 颜色, 沃尔玛建议价格, 筛选部分, 产品标题, 颜色, 沃尔玛号, Size, 出现问题, windows terminal安装失败, 登录不了windows账户, 棋魂观后感, 成功终究会孤独——时光, 神之一手——褚赢随机命名在中遍历找到列的值这些值都是经过筛选的如下代码列应用筛选排除空白行筛选的填充公式应用筛选后获取最后一个可见单元格的行号设置起始单元格跳过标题行标题占用第一行使用上面找到的最后一个可见单元格的行号确定结束单元格为可见单元格填充公式找到列的值去中的列筛选按进行筛选对筛选出来的列进行随机函数填写筛选出来的列代码如下随机函数得到的值填写到的遍历提取筛选随机填写随机函数的代码仅供参考提取非空词汇从开始因为是基于的索引为每个单元格在到范围内生成并赋值一个随机词汇因为是第二列的第三行以下代码是我的一部分函数需要完善这部分功能遍历提取筛选随机填写定义公式中的固定字符串为变量便于未来修改封装填充公式的函数设置公式应用筛选后获取最后一个可见单元格的行号设置起始单元格跳过标题行标题占用第一行使用上面找到的最后一个可见单元格的行号确定结束单元格为可见单元格填充公式自动填充公式的主函数在和填写公式并向下填充到最后一行有效数据设置列的文本对齐方式为填充为填充对齐方式在第列左侧插入两列在填写公式并向下填充列应用筛选排除空白行列应用自定义填充公式只对可见单元格填充执行自动填充公式随机命名获取中列可见单元格的最后一行遍历可见单元格并收集遍历收集到的对每个值进行操作获取筛选后的可见单元格从筛选结果中随机选择个值并合并防止选取重复的值将合并后的随机值回填到的对应列清除筛选全选部分在填公式再向下填充列有多少有效数据就填充多少在填公式再向下填充列有多少有效数据就填充多少列设置单元格式文本对齐方式中的水平对齐为填充第列左侧插入两行在填公式再向下填充列有多少有效数据就填充多少筛选部分列进行筛选除了空白的都选择筛选部分向下填充有问题父有公式就错了在填公式再向下填充列有多少有效数据就填充多少在填公式再向下填充列有多少有效数据就填充多少在填公式再向下填充列有多少有效数据就填充多少全选部分自定义在填公式再向下填充列有多少有效数据就填充多少在填公式再向下填充列有多少有效数据就填充多少单元格式设置填充列设置单元格式文本对齐方式中的水平对齐为填充颜色第列左侧插入两行在填公式再向下填充列有多少有效数据就填充多少沃尔玛建议价格列行开始到末尾的行复制到表的列处以分割符号空格和中文号分列列列数据类型选择常规将列的所有数据替换到表的列的第行开始的数据在公式模版填入了筛选部分列进行筛选除了空白的都选择产品标题在填公式再向下填充列有多少有效数据就填充多少颜色在填公式再向下填充列有多少有效数据就填充多少要先删完颜色再去同一产品标题和不然会有沃尔玛号发沃尔玛公式是对的但是怕沃尔玛号忘记删除了将写入公式后将列行以后的行都填充公式在填公式再向下填充列有多少有效数据就填充多少出现问题安装失败问题描述安装的时候安装失败应用安装程序无法安装应用包相关项请向开发人员索要应用包开发者选项要开启其次和服务没有启动问题描述启动会被拒绝访问里的里的的右侧找到改为自动延迟启动自动手动禁用问题描述改为会被拒绝访问当前登陆的账户没有修改该值的权限在右键给予权限登录不了账户问题描述登录账户会一直等待可能是没有设置网络设置里的里的服务输入和棋魂观后感成功终究会孤独时光神之一手褚赢棋局不在乎输赢的时候便能找到神之一手褚赢俞亮时光沈一郎如果你想找到从到之间的内容并将其保留下来你可以使用的函数和函数或者函数但函数是区分大小写的这里是一个步骤说明和示例公式步骤使用或函数找到的位置使用或函数找到的位置使用函数提取两个位置之间的文本示例公式这个公式的工作原理如下查找在单元格中的位置查找在单元格中的位置计算这个字符串的长度函数用于提取从之后到之前的文本请注意这个公式假设和都在单元格中并且出现在之后如果可能出现在之前你需要在公式中添加额外的逻辑来处理这种情况此外如果不一定出现在之后或者如果和之间可能有多个那么这个公式可能需要进行调整以适应你的具体需求最后这个公式没有处理如果或不存在于单元格中的情况如果需要处理这种情况你可以使用函数来捕获错误并返回一个备用值拉取项目项目地址拉取某个分支分支名查看当前分支创建并切换分支分支名暂存注意有空格本地提交内容远程提交分支名如果你的本地分支是基于远程的分支的话建议首先拉取分支的最新代码然后合并或者变基到本地分支再进行提交和推送这样可以确保你的本地分支是基于最新的远程代码并且保持了分支的更新所以在主机上你可以这样操作拉取远程的分支的最新代码解决任何可能出现的冲突如果需要合并或者变基到本地的分支或者然后再进行提交和推送描述你的修改这样做可以确保你的代码是基于最新的分支同时也保留了分支的独立性当你收到这个消息时意味着需要指示如何处理分支间的不同历史这通常发生在你的本地分支和远程分支历史有所偏离时为了继续需要你指定合并或拉取时使用的策略这里是几种处理方法使用合并策略这是默认的拉取策略它会创建一个合并提交来保留两个分支的历史如果你想保持这种行为可以通过以下命令设置之后你可以直接使用它将使用合并策略使用变基策略变基会重新应用你的本地提交在远程分支的顶端这样可以得到一个更干净的直线历史如果你想使用变基策略可以设置然后运行将采用变基策略仅快进合并如果你只希望在没有冲突的情况下合并即只接受快进合并可以设置这将确保只在可以直接快进的情况下进行合并否则操作会失败选择适合你工作流程的策略你可以使用选项将其设置为所有仓库的默认行为或者省略它只对当前仓库有效例如设置全局变基策略之后无论是合并还是拉取都会按照你设置的策略进行操作这有助于管理分支间的差异并保持你的项目历史整洁这段信息显示了一个典型的操作过程中的冲突情况你尝试合并分支到你的本地分支但是因为本地文件宏模板有未提交的更改合并被中断要解决这个问题你有几个选项提交你的更改如果你想保留这些更改并继续合并你可以提交它们使用以下命令宏模板描述你的更改然后你可以重新尝试合并暂存你的更改如果你还不想提交这些更改但想继续合并可以使用暂存命令这会临时保存你的更改并允许你进行合并之后你可以再应用这些更改使用以下命令命令会重新应用之前暂存的更改放弃本地更改如果你不在乎本地的更改你可以通过以下命令放弃这些更改宏模板选择适合你当前需求的方法来处理这个冲突如果你经常需要处理此类问题建议更深入地了解的分支管理和合并策略',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-04-15 07:56:34',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://wowmac.oss-cn-shenzhen.aliyuncs.com/ArchLinux.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="博客"><img class="back-menu-item-icon" src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">Ravanla</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/04/"><span class="card-archive-list-date">四月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="article-meta tags"></span></div></div><h1 class="post-title" itemprop="name headline">2024-04-15-宏模版</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2024-04-14T23:54:22.000Z" title="发表于 2024-04-15 07:54:22">2024-04-15</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2024-04-14T23:56:34.221Z" title="更新于 2024-04-15 07:56:34">2024-04-15</time></span></div><div class="meta-secondline"><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为深圳"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>深圳</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src=""></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="https://ravanla.github.io/2024/04/15/2024-04-15-%E5%AE%8F%E6%A8%A1%E7%89%88/"><header><h1 id="CrawlerTitle" itemprop="name headline">2024-04-15-宏模版</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">Ravanla</span><time itemprop="dateCreated datePublished" datetime="2024-04-14T23:54:22.000Z" title="发表于 2024-04-15 07:54:22">2024-04-15</time><time itemprop="dateCreated datePublished" datetime="2024-04-14T23:56:34.221Z" title="更新于 2024-04-15 07:56:34">2024-04-15</time></header><h2 id="随机命名"><a href="#随机命名" class="headerlink" title="随机命名"></a>随机命名</h2><p>在Sheet1中遍历找到F列的值（fValue），这些值都是经过筛选的SpecialCells，如下代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">test</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="comment">// B列应用筛选，排除空白行</span></span><br><span class="line">    <span class="keyword">let</span> columnB = worksheet.<span class="title class_">Range</span>(<span class="string">&quot;B1:B&quot;</span> + lastRow);</span><br><span class="line">    columnB.<span class="title class_">AutoFilter</span>(<span class="number">1</span>, <span class="string">&quot;&lt;&gt;&quot;</span>, <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 筛选的填充公式</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">fillVisibleCellsOnly</span>(<span class="params">worksheet, columnLetter, formula</span>) &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 应用筛选后，获取最后一个可见单元格的行号</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    https://learn.microsoft.com/zh-cn/dotnet/api/microsoft.office.interop.excel.xlcelltype?view=excel-pia	</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">const</span> lastVisibleRow = worksheet.<span class="title class_">Range</span>(<span class="string">`A:A`</span>)</span><br><span class="line">        .<span class="title class_">SpecialCells</span>(<span class="number">12</span> <span class="comment">/* xlCellTypeVisible */</span>)</span><br><span class="line">        .<span class="title class_">Cells</span>(worksheet.<span class="property">Rows</span>.<span class="property">Count</span>, <span class="number">1</span>)</span><br><span class="line">        .<span class="title class_">End</span>(-<span class="number">4162</span> <span class="comment">/* xlUp */</span>)</span><br><span class="line">        .<span class="property">Row</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 设置起始单元格，跳过标题行</span></span><br><span class="line">    <span class="keyword">const</span> startCell = columnLetter + <span class="string">&quot;2&quot;</span>; <span class="comment">// 标题占用第一行</span></span><br><span class="line">    <span class="comment">// 使用上面找到的最后一个可见单元格的行号确定结束单元格</span></span><br><span class="line">    <span class="keyword">const</span> endCell = columnLetter + lastVisibleRow;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 为可见单元格填充公式</span></span><br><span class="line">    worksheet.<span class="title class_">Range</span>(startCell + <span class="string">&#x27;:&#x27;</span> + endCell)</span><br><span class="line">        .<span class="title class_">SpecialCells</span>(<span class="number">12</span> <span class="comment">/* xlCellTypeVisible */</span>)</span><br><span class="line">        .<span class="property">Formula</span> = formula;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>找到F列的值（fValue），去Sheet4中的A列筛选按fValue进行筛选。</p>
+<p>对筛选出来的列进行随机函数填写。筛选出来的列代码如下</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> lastVisibleRow = worksheet.<span class="title class_">Range</span>(<span class="string">`A:A`</span>)</span><br><span class="line">        .<span class="title class_">SpecialCells</span>(<span class="number">12</span> <span class="comment">/* xlCellTypeVisible */</span>)</span><br><span class="line">        .<span class="title class_">Cells</span>(worksheet.<span class="property">Rows</span>.<span class="property">Count</span>, <span class="number">1</span>)</span><br><span class="line">        .<span class="title class_">End</span>(-<span class="number">4162</span> <span class="comment">/* xlUp */</span>)</span><br><span class="line">        .<span class="property">Row</span>;</span><br></pre></td></tr></table></figure>
+<p>随机函数得到的值填写到Sheet1的fValue。遍历提取fValue、筛选、随机、填写。</p>
+<p>随机函数的代码（仅供参考）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">main</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> workbook = <span class="title class_">Application</span>.<span class="property">ActiveWorkbook</span>;</span><br><span class="line">    <span class="keyword">let</span> sheet = workbook.<span class="property">ActiveSheet</span>;</span><br><span class="line">    <span class="keyword">let</span> hotwordsRange = sheet.<span class="title class_">Range</span>(<span class="string">&quot;A2:A236&quot;</span>);</span><br><span class="line">    <span class="keyword">let</span> hotwords = [];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 提取非空词汇</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> row = <span class="number">1</span>; row &lt;= <span class="number">235</span>; row++) &#123;  <span class="comment">// 从1开始，因为Range是基于1的索引</span></span><br><span class="line">        <span class="keyword">let</span> word = hotwordsRange.<span class="title class_">Cells</span>(row, <span class="number">1</span>).<span class="property">Value</span>;</span><br><span class="line">        <span class="keyword">if</span> (word !== <span class="string">&quot;&quot;</span>) hotwords.<span class="title function_">push</span>(word);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 为每个单元格在B3到B7范围内生成并赋值一个随机词汇</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">let</span> randomIndex = <span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * hotwords.<span class="property">length</span>);</span><br><span class="line">        <span class="keyword">let</span> productName = hotwords[randomIndex];</span><br><span class="line">        sheet.<span class="title class_">Cells</span>(<span class="number">2</span> + i, <span class="number">2</span>).<span class="property">Formula</span> = productName; <span class="comment">// 2+i因为B3是第二列的第三行</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以下代码是我的一部分函数，需要完善这部分功能（遍历提取fValue、筛选、随机、填写）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义公式中的固定字符串为变量，便于未来修改</span></span><br><span class="line"><span class="keyword">const</span> postfix = <span class="string">&quot;_WMZYF0413&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 封装填充公式的函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">fillFormula</span>(<span class="params">worksheet, startCell, endCell, formula</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> formulaCell = worksheet.<span class="title class_">Range</span>(startCell);</span><br><span class="line">    formulaCell.<span class="property">Formula</span> = formula; <span class="comment">// 设置公式</span></span><br><span class="line">    <span class="keyword">let</span> fillRange = worksheet.<span class="title class_">Range</span>(startCell + <span class="string">&#x27;:&#x27;</span> + endCell);</span><br><span class="line">    formulaCell.<span class="title class_">AutoFill</span>(fillRange, <span class="number">1</span>); <span class="comment">// xlFillCopy</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">fillVisibleCellsOnly</span>(<span class="params">worksheet, columnLetter, formula</span>) &#123;</span><br><span class="line">    <span class="comment">// 应用筛选后，获取最后一个可见单元格的行号</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    https://learn.microsoft.com/zh-cn/dotnet/api/microsoft.office.interop.excel.xlcelltype?view=excel-pia	</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">const</span> lastVisibleRow = worksheet.<span class="title class_">Range</span>(<span class="string">`A:A`</span>)</span><br><span class="line">        .<span class="title class_">SpecialCells</span>(<span class="number">12</span> <span class="comment">/* xlCellTypeVisible */</span>)</span><br><span class="line">        .<span class="title class_">Cells</span>(worksheet.<span class="property">Rows</span>.<span class="property">Count</span>, <span class="number">1</span>)</span><br><span class="line">        .<span class="title class_">End</span>(-<span class="number">4162</span> <span class="comment">/* xlUp */</span>)</span><br><span class="line">        .<span class="property">Row</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 设置起始单元格，跳过标题行</span></span><br><span class="line">    <span class="keyword">const</span> startCell = columnLetter + <span class="string">&quot;2&quot;</span>; <span class="comment">// 标题占用第一行</span></span><br><span class="line">    <span class="comment">// 使用上面找到的最后一个可见单元格的行号确定结束单元格</span></span><br><span class="line">    <span class="keyword">const</span> endCell = columnLetter + lastVisibleRow;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 为可见单元格填充公式</span></span><br><span class="line">    worksheet.<span class="title class_">Range</span>(startCell + <span class="string">&#x27;:&#x27;</span> + endCell)</span><br><span class="line">        .<span class="title class_">SpecialCells</span>(<span class="number">12</span> <span class="comment">/* xlCellTypeVisible */</span>)</span><br><span class="line">        .<span class="property">Formula</span> = formula;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 自动填充公式的主函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">autoFillFormulas</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> workbook = <span class="title class_">Application</span>.<span class="property">ActiveWorkbook</span>;</span><br><span class="line">    <span class="keyword">const</span> worksheet = workbook.<span class="property">ActiveSheet</span>;</span><br><span class="line">    <span class="keyword">const</span> lastRow = worksheet.<span class="title class_">Cells</span>(worksheet.<span class="property">Rows</span>.<span class="property">Count</span>, <span class="string">&quot;A&quot;</span>).<span class="title class_">End</span>(-<span class="number">4162</span>).<span class="property">Row</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 在C2和D2填写公式，并向下填充到最后一行有效数据</span></span><br><span class="line">    <span class="title function_">fillFormula</span>(worksheet, <span class="string">&quot;C2&quot;</span>, <span class="string">&quot;C&quot;</span> + lastRow, <span class="string">`=A2&amp;&quot;<span class="subst">$&#123;postfix&#125;</span>&quot;`</span>);</span><br><span class="line">    <span class="title function_">fillFormula</span>(worksheet, <span class="string">&quot;D2&quot;</span>, <span class="string">&quot;D&quot;</span> + lastRow, <span class="string">`=B2&amp;&quot;<span class="subst">$&#123;postfix&#125;</span>&quot;`</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 设置H列的文本对齐方式为填充</span></span><br><span class="line">    <span class="keyword">let</span> columnH = worksheet.<span class="title class_">Range</span>(<span class="string">&quot;H1:H&quot;</span> + lastRow);</span><br><span class="line">    columnH.<span class="property">HorizontalAlignment</span> = <span class="number">5</span>; <span class="comment">// 5为填充对齐方式</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 在第I列左侧插入两列</span></span><br><span class="line">    worksheet.<span class="title class_">Columns</span>(<span class="string">&quot;I:I&quot;</span>).<span class="title class_">Insert</span>(-<span class="number">4161</span>, <span class="literal">undefined</span>);</span><br><span class="line">    worksheet.<span class="title class_">Columns</span>(<span class="string">&quot;I:I&quot;</span>).<span class="title class_">Insert</span>(-<span class="number">4161</span>, <span class="literal">undefined</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 在J2填写公式 `=I2&amp;K2` 并向下填充</span></span><br><span class="line">    <span class="title function_">fillFormula</span>(worksheet, <span class="string">&quot;J2&quot;</span>, <span class="string">&quot;J&quot;</span> + lastRow, <span class="string">&quot;=I2&amp;K2&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// B列应用筛选，排除空白行</span></span><br><span class="line">    <span class="keyword">let</span> columnB = worksheet.<span class="title class_">Range</span>(<span class="string">&quot;B1:B&quot;</span> + lastRow);</span><br><span class="line">    columnB.<span class="title class_">AutoFilter</span>(<span class="number">1</span>, <span class="string">&quot;&lt;&gt;&quot;</span>, <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// F, I, AK列应用自定义填充公式，只对可见单元格填充</span></span><br><span class="line">    <span class="title function_">fillVisibleCellsOnly</span>(worksheet, <span class="string">&quot;B&quot;</span>, <span class="string">`=IF(B2=&quot;&quot;,A2,B2)`</span>);</span><br><span class="line">    <span class="title function_">fillVisibleCellsOnly</span>(worksheet, <span class="string">&quot;F&quot;</span>, <span class="string">`=IF(F2=&quot;&quot;,&quot;&quot;,F2)`</span>);</span><br><span class="line">    <span class="title function_">fillVisibleCellsOnly</span>(worksheet, <span class="string">&quot;I&quot;</span>, <span class="string">`=IF(I2=&quot;&quot;,&quot;&quot;,I2)`</span>);</span><br><span class="line">    <span class="title function_">fillVisibleCellsOnly</span>(worksheet, <span class="string">&quot;AK&quot;</span>, <span class="string">`=IF(AK2=&quot;&quot;,&quot;&quot;,AK2)`</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 执行自动填充公式</span></span><br><span class="line"><span class="comment">//autoFillFormulas();</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>随机命名</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">main</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> workbook = <span class="title class_">Application</span>.<span class="property">ActiveWorkbook</span>;</span><br><span class="line">    <span class="keyword">const</span> sheet1 = workbook.<span class="title class_">Worksheets</span>(<span class="string">&quot;Sheet1&quot;</span>);</span><br><span class="line">    <span class="keyword">const</span> sheet4 = workbook.<span class="title class_">Worksheets</span>(<span class="string">&quot;Sheet4&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 获取Sheet1中F列可见单元格的最后一行</span></span><br><span class="line">    <span class="keyword">const</span> visibleCellsF = sheet1.<span class="title class_">Range</span>(<span class="string">&quot;F:F&quot;</span>).<span class="title class_">SpecialCells</span>(<span class="number">12</span> <span class="comment">/* xlCellTypeVisible */</span>);</span><br><span class="line">    <span class="keyword">const</span> fValues = [];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 遍历可见单元格并收集fValue</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> cell <span class="keyword">of</span> visibleCellsF.<span class="property">Cells</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (cell.<span class="property">Value</span> !== <span class="string">&quot;&quot;</span>) &#123;</span><br><span class="line">            fValues.<span class="title function_">push</span>(&#123;<span class="attr">value</span>: cell.<span class="property">Value</span>, <span class="attr">row</span>: cell.<span class="property">Row</span>&#125;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 遍历收集到的fValues，对每个值进行操作</span></span><br><span class="line">    fValues.<span class="title function_">forEach</span>(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> fValue = item.<span class="property">value</span>;</span><br><span class="line">        <span class="keyword">const</span> lastRowA = sheet4.<span class="title class_">Cells</span>(sheet4.<span class="property">Rows</span>.<span class="property">Count</span>, <span class="string">&quot;A&quot;</span>).<span class="title class_">End</span>(-<span class="number">4162</span> <span class="comment">/* xlUp */</span>).<span class="property">Row</span>;</span><br><span class="line">        sheet4.<span class="title class_">Range</span>(<span class="string">&quot;A1:A&quot;</span> + lastRowA).<span class="title class_">AutoFilter</span>(<span class="number">1</span>, fValue);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取筛选后的可见单元格</span></span><br><span class="line">        <span class="keyword">const</span> filteredCells = sheet4.<span class="title class_">Range</span>(<span class="string">&quot;A1:A&quot;</span> + lastRowA).<span class="title class_">SpecialCells</span>(<span class="number">12</span> <span class="comment">/* xlCellTypeVisible */</span>);</span><br><span class="line">        <span class="keyword">const</span> values = [];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> cell <span class="keyword">of</span> filteredCells.<span class="property">Cells</span>) &#123;</span><br><span class="line">            values.<span class="title function_">push</span>(cell.<span class="property">Value</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 从筛选结果中随机选择6个值并合并</span></span><br><span class="line">        <span class="keyword">if</span> (values.<span class="property">length</span> &gt;= <span class="number">6</span>) &#123;</span><br><span class="line">            <span class="keyword">let</span> randomValues = [];</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) &#123;</span><br><span class="line">                <span class="keyword">let</span> randomIndex = <span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * values.<span class="property">length</span>);</span><br><span class="line">                randomValues.<span class="title function_">push</span>(values.<span class="title function_">splice</span>(randomIndex, <span class="number">1</span>)[<span class="number">0</span>]); <span class="comment">// 防止选取重复的值</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">let</span> combinedValue = randomValues.<span class="title function_">join</span>(<span class="string">&quot; &quot;</span>);</span><br><span class="line">            <span class="comment">// 将合并后的随机值回填到Sheet1的对应F列</span></span><br><span class="line">            sheet1.<span class="title class_">Cells</span>(item.<span class="property">row</span>, <span class="string">&quot;F&quot;</span>).<span class="property">Value</span> = combinedValue;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 清除筛选</span></span><br><span class="line">        sheet4.<span class="title class_">Range</span>(<span class="string">&quot;A1:A&quot;</span> + lastRowA).<span class="title class_">AutoFilter</span>(<span class="number">1</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">## 全选部分</span></span><br><span class="line">在C2填公式 <span class="code">`=A2&amp;&quot;_WMZYF&quot;`</span>，再向下填充，A列有多少有效数据就填充多少</span><br><span class="line">在D2填公式 <span class="code">`=B2&amp;&quot;_WMZYF&quot;`</span>，再向下填充，A列有多少有效数据就填充多少</span><br><span class="line"></span><br><span class="line">H列设置单元格式，文本对齐方式中的水平对齐为填充</span><br><span class="line">第I列左侧插入两行</span><br><span class="line">在J2填公式 <span class="code">`=I2&amp;K2`</span>，再向下填充，A列有多少有效数据就填充多少</span><br><span class="line"></span><br><span class="line"><span class="section">## 筛选部分</span></span><br><span class="line">B列进行筛选，除了空白的都选择</span><br><span class="line"></span><br><span class="line"><span class="section">## 筛选部分向下填充有问题</span></span><br><span class="line">父SKU有公式就错了</span><br><span class="line">在F3填公式 <span class="code">`=IF(F2=&quot;&quot;,&quot;&quot;,F2)`</span>，再向下填充，A列有多少有效数据就填充多少</span><br><span class="line">在I3填公式 <span class="code">`=IF(I2=&quot;&quot;,&quot;&quot;,I2)`</span>，再向下填充，A列有多少有效数据就填充多少</span><br><span class="line">在AK3填公式 <span class="code">`=IF(AK2=&quot;&quot;,&quot;&quot;,AK2)`</span>，再向下填充，A列有多少有效数据就填充多少</span><br></pre></td></tr></table></figure>
+
+<h2 id="全选部分"><a href="#全选部分" class="headerlink" title="全选部分"></a>全选部分</h2><h3 id="自定义SKU"><a href="#自定义SKU" class="headerlink" title="自定义SKU"></a>自定义SKU</h3><p>在C2填公式 <code>=A2&amp;&quot;_WMZYF&quot;</code>，再向下填充，A列有多少有效数据就填充多少<br>在D2填公式 <code>=B2&amp;&quot;_WMZYF&quot;</code>，再向下填充，A列有多少有效数据就填充多少</p>
+<h3 id="单元格式设置填充"><a href="#单元格式设置填充" class="headerlink" title="单元格式设置填充"></a>单元格式设置填充</h3><p>H列设置单元格式，文本对齐方式中的水平对齐为填充</p>
+<h3 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h3><p>第I列左侧插入两行<br>在J2填公式 <code>=I2&amp;K2</code>，再向下填充，A列有多少有效数据就填充多少</p>
+<h3 id="沃尔玛建议价格"><a href="#沃尔玛建议价格" class="headerlink" title="沃尔玛建议价格"></a>沃尔玛建议价格</h3><p><del>O列2行开始到末尾的行 复制到Sheet1表的A列处</del></p>
+<p><del>以分割符号空格和中文：号 分列A列，列数据类型选择常规</del></p>
+<p><del>将C列的所有数据替换到Sheet0表的 O列的第2行开始的数据</del></p>
+<p>在公式模版填入了<code>=IF(Sheet1!M3=&quot;&quot;,&quot;&quot;,MID(Sheet1!M3,SEARCH(&quot;806 15%：&quot;,Sheet1!M3,1)+LEN(&quot;806 15%：&quot;),SEARCH(&quot; USD  925 23%&quot;,Sheet1!M3,1)-SEARCH(&quot;806 15%：&quot;,Sheet1!M3,1)-LEN(&quot;806 15%：&quot;))-3)</code></p>
+<h2 id="筛选部分"><a href="#筛选部分" class="headerlink" title="筛选部分"></a>筛选部分</h2><p>B列进行筛选，除了空白的都选择</p>
+<h3 id="产品标题"><a href="#产品标题" class="headerlink" title="产品标题"></a>产品标题</h3><p>在F3填公式 <code>=IF(F2=&quot;&quot;,&quot;&quot;,F2)</code>，再向下填充，A列有多少有效数据就填充多少</p>
+<h3 id="颜色-1"><a href="#颜色-1" class="headerlink" title="颜色"></a>颜色</h3><p>在I3填公式 <code>=IF(I2=&quot;&quot;,&quot;&quot;,I2)</code>，再向下填充，A列有多少有效数据就填充多少<br>要先删完颜色再去同一产品标题和Size，不然会有#REF</p>
+<h3 id="沃尔玛号"><a href="#沃尔玛号" class="headerlink" title="沃尔玛号"></a>沃尔玛号</h3><p><del><code>=IF(B3=&quot;&quot;,&quot;&quot;,&#39;[发-沃尔玛.xlsx]Sheet1&#39;!A1)</code></del></p>
+<p>公式是对的，但是怕沃尔玛号忘记删除了</p>
+<h3 id="Size"><a href="#Size" class="headerlink" title="Size"></a>Size</h3><p>将写入公式 &#96;&#96; 后将AK列3行以后的行都填充公式<br>在AK3填公式 <code>=IF(AK2=&quot;&quot;,&quot;&quot;,AK2)</code>，再向下填充，A列有多少有效数据就填充多少</p>
+<h2 id="出现问题"><a href="#出现问题" class="headerlink" title="出现问题"></a>出现问题</h2><h3 id="windows-terminal安装失败"><a href="#windows-terminal安装失败" class="headerlink" title="windows terminal安装失败"></a>windows terminal安装失败</h3><p>问题描述：安装windows terminal的时候安装失败 ‘应用安装程序无法安装应用包相关项。请向开发人员索要  应用包。’</p>
+<p>开发者选项要开启 其次windows update 和 installer 服务没有启动</p>
+<p>问题描述：update 启动会被拒绝访问</p>
+<p>regedit里的HKEY_LOCAL_MACHINESYSTEM\CurrentControlSet\Services\WaaSMedicSvc 里的WaaSMedicSvc 的右侧找到 Start 改为2</p>
+<p>1→自动（延迟启动）<br>2→自动<br>3→手动<br>4→禁用</p>
+<p>问题描述：Start 改为2 会被拒绝访问</p>
+<p>当前登陆的账户没有修改该值的权限，在WaaSMedicSvc右键给予权限</p>
+<h3 id="登录不了windows账户"><a href="#登录不了windows账户" class="headerlink" title="登录不了windows账户"></a>登录不了windows账户</h3><p>问题描述：登录账户会一直等待</p>
+<p>可能是DNS没有设置。网络设置里的ipv4里的DNS服务输入4.2.2.1 和 4.2.2.2</p>
+<h2 id="棋魂观后感"><a href="#棋魂观后感" class="headerlink" title="棋魂观后感"></a>棋魂观后感</h2><h3 id="成功终究会孤独——时光"><a href="#成功终究会孤独——时光" class="headerlink" title="成功终究会孤独——时光"></a>成功终究会孤独——时光</h3><h3 id="神之一手——褚赢"><a href="#神之一手——褚赢" class="headerlink" title="神之一手——褚赢"></a>神之一手——褚赢</h3><p>棋局不在乎输赢的时候便能找到神之一手。<br>褚赢 俞亮 时光 沈一郎</p>
+<hr>
+<p>如果你想找到从 “Size: XS “ 到 “S” 之间的内容，并将其保留下来，你可以使用 Excel 的 MID 函数和 SEARCH 函数（或者 FIND 函数，但 FIND 函数是区分大小写的）。这里是一个步骤说明和示例公式：</p>
+<p>步骤：</p>
+<p>使用 SEARCH 或 FIND 函数找到 “Size: XS “ 的位置。<br>使用 SEARCH 或 FIND 函数找到 “S” 的位置。<br>使用 MID 函数提取两个位置之间的文本。<br>示例公式：</p>
+<figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">=<span class="built_in">MID</span>(<span class="symbol">E1</span>, </span><br><span class="line">   <span class="built_in">SEARCH</span>(<span class="string">&quot;Size: XS &quot;</span>, <span class="symbol">E1</span>) + <span class="built_in">LEN</span>(<span class="string">&quot;Size: XS &quot;</span>) + <span class="number">1</span>, </span><br><span class="line">   <span class="built_in">SEARCH</span>(<span class="string">&quot;S&quot;</span>, <span class="symbol">E1</span>) - <span class="built_in">SEARCH</span>(<span class="string">&quot;Size: XS &quot;</span>, <span class="symbol">E1</span>) - <span class="built_in">LEN</span>(<span class="string">&quot;Size: XS &quot;</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>这个公式的工作原理如下：</p>
+<p>SEARCH(“Size: XS “, E1) 查找 “Size: XS “ 在 E1 单元格中的位置。<br>SEARCH(“S”, E1) 查找 “S” 在 E1 单元格中的位置。<br>LEN(“Size: XS “) 计算 “Size: XS “ 这个字符串的长度。<br>MID 函数用于提取从 “Size: XS “ 之后到 “S” 之前的文本。<br>请注意，这个公式假设 “Size: XS “ 和 “S” 都在单元格 E1 中，并且 “S” 出现在 “Size: XS “ 之后。如果 “S” 可能出现在 “Size: XS “ 之前，你需要在公式中添加额外的逻辑来处理这种情况。</p>
+<p>此外，如果 “S” 不一定出现在 “Size: XS “ 之后，或者如果 “Size: XS “ 和 “S” 之间可能有多个 “S”，那么这个公式可能需要进行调整以适应你的具体需求。</p>
+<p>最后，这个公式没有处理如果 “Size: XS “ 或 “S” 不存在于 E1 单元格中的情况。如果需要处理这种情况，你可以使用 IFERROR 函数来捕获错误并返回一个备用值。</p>
+<hr>
+<p>拉取项目 git clone+项目地址<br>拉取某个分支 git pull origin 分支名<br>查看当前分支 git branch<br>创建并切换分支 git checkout -b 分支名<br>暂存 git add .(注意有空格）<br>本地提交 git commit -m ‘内容’<br>远程提交 git push origin 分支名</p>
+<p>如果你的本地分支是基于远程的 dev 分支的话，建议首先拉取 dev 分支的最新代码，然后合并或者变基（rebase）到本地 dev 分支，再进行提交和推送。这样可以确保你的本地分支是基于最新的远程代码，并且保持了 dev 分支的更新。</p>
+<p>所以在主机B上，你可以这样操作：</p>
+<p>拉取远程的 dev 分支的最新代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin dev</span><br></pre></td></tr></table></figure>
+<p>解决任何可能出现的冲突。<br>如果需要，合并或者变基到本地的 dev 分支：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge origin/dev</span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase origin/dev</span><br></pre></td></tr></table></figure>
+<p>然后再进行提交和推送：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span> .</span><br><span class="line">git <span class="keyword">commit</span> <span class="operator">-</span>m &quot;描述你的修改&quot;</span><br><span class="line">git push origin dev</span><br></pre></td></tr></table></figure>
+<p>这样做可以确保你的代码是基于最新的 dev 分支，同时也保留了 main 分支的独立性。</p>
+<p>当你收到这个消息时，意味着Git需要指示如何处理分支间的不同历史。这通常发生在你的本地分支和远程分支历史有所偏离时。为了继续，Git需要你指定合并或拉取时使用的策略。</p>
+<p>这里是几种处理方法：</p>
+<p>使用合并策略（merge）：</p>
+<p>这是Git默认的拉取策略，它会创建一个合并提交来保留两个分支的历史。如果你想保持这种行为，可以通过以下命令设置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config pull.rebase <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>之后你可以直接使用 git pull，它将使用合并策略。<br>使用变基策略（rebase）：</p>
+<p>变基会重新应用你的本地提交在远程分支的顶端，这样可以得到一个更干净的直线历史。如果你想使用变基策略，可以设置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config pull.rebase <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>然后运行 git pull 将采用变基策略。<br>仅快进合并（fast-forward only）：</p>
+<p>如果你只希望在没有冲突的情况下合并，即只接受快进合并，可以设置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config pull.ff only</span><br></pre></td></tr></table></figure>
+<p>这将确保只在可以直接快进的情况下进行合并，否则操作会失败。<br>选择适合你工作流程的策略。你可以使用 –global 选项将其设置为所有仓库的默认行为，或者省略它只对当前仓库有效。例如，设置全局变基策略：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global pull.rebase <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>之后，无论是合并还是拉取，Git都会按照你设置的策略进行操作。这有助于管理分支间的差异，并保持你的项目历史整洁。</p>
+<p>这段信息显示了一个典型的Git操作过程中的冲突情况。你尝试合并 dev 分支到你的本地分支，但是因为本地文件 code&#x2F;宏模板.md 有未提交的更改，合并被中断。<br>要解决这个问题，你有几个选项：<br>提交你的更改：如果你想保留这些更改并继续合并，你可以提交它们。使用以下命令：bashCopy codegit add code&#x2F;宏模板.md git commit -m “描述你的更改” 然后你可以重新尝试合并：bashCopy codegit merge origin&#x2F;dev<br>暂存你的更改：如果你还不想提交这些更改，但想继续合并，可以使用暂存（stash）命令。这会临时保存你的更改，并允许你进行合并。之后你可以再应用这些更改。使用以下命令：bashCopy codegit stash git merge origin&#x2F;dev git stash pop git stash pop 命令会重新应用之前暂存的更改。<br>放弃本地更改：如果你不在乎本地的更改，你可以通过以下命令放弃这些更改：bashCopy codegit checkout – code&#x2F;宏模板.md git merge origin&#x2F;dev<br>选择适合你当前需求的方法来处理这个冲突。如果你经常需要处理此类问题，建议更深入地了解Git的分支管理和合并策略。</p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wowmac.oss-cn-shenzhen.aliyuncs.com/ArchLinux.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wowmac.oss-cn-shenzhen.aliyuncs.com/ArchLinux.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">Ravanla</div><div class="post-copyright__author_desc">时光知味，岁月沉香。</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://ravanla.github.io/2024/04/15/2024-04-15-%E5%AE%8F%E6%A8%A1%E7%89%88/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('https://ravanla.github.io/2024/04/15/2024-04-15-%E5%AE%8F%E6%A8%A1%E7%89%88/')">2024-04-15-宏模版</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://ravanla.github.io/2024/04/15/2024-04-15-%E5%AE%8F%E6%A8%A1%E7%89%88/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=2024-04-15-宏模版&amp;url=https://ravanla.github.io/2024/04/15/2024-04-15-%E5%AE%8F%E6%A8%A1%E7%89%88/&amp;pic=" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://ravanla.github.io" target="_blank">Ravanla</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"></div></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2024/03/28/2024-03-28-%E4%BC%A0%E7%9B%9B%E5%B7%A5%E4%BD%9C/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">2024-03-28-传盛工作</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://wowmac.oss-cn-shenzhen.aliyuncs.com/ArchLinux.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png" alt="status"/></div></div><div class="author-info__description">真正有价值的东西，会在岁月里沉淀下来，成为珍贵的寄托。</div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E5%91%BD%E5%90%8D"><span class="toc-number">1.</span> <span class="toc-text">随机命名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A8%E9%80%89%E9%83%A8%E5%88%86"><span class="toc-number">2.</span> <span class="toc-text">全选部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89SKU"><span class="toc-number">2.1.</span> <span class="toc-text">自定义SKU</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E6%A0%BC%E5%BC%8F%E8%AE%BE%E7%BD%AE%E5%A1%AB%E5%85%85"><span class="toc-number">2.2.</span> <span class="toc-text">单元格式设置填充</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%9C%E8%89%B2"><span class="toc-number">2.3.</span> <span class="toc-text">颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B2%83%E5%B0%94%E7%8E%9B%E5%BB%BA%E8%AE%AE%E4%BB%B7%E6%A0%BC"><span class="toc-number">2.4.</span> <span class="toc-text">沃尔玛建议价格</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AD%9B%E9%80%89%E9%83%A8%E5%88%86"><span class="toc-number">3.</span> <span class="toc-text">筛选部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A7%E5%93%81%E6%A0%87%E9%A2%98"><span class="toc-number">3.1.</span> <span class="toc-text">产品标题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%9C%E8%89%B2-1"><span class="toc-number">3.2.</span> <span class="toc-text">颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B2%83%E5%B0%94%E7%8E%9B%E5%8F%B7"><span class="toc-number">3.3.</span> <span class="toc-text">沃尔玛号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Size"><span class="toc-number">3.4.</span> <span class="toc-text">Size</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BA%E7%8E%B0%E9%97%AE%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">出现问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#windows-terminal%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5"><span class="toc-number">4.1.</span> <span class="toc-text">windows terminal安装失败</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E5%BD%95%E4%B8%8D%E4%BA%86windows%E8%B4%A6%E6%88%B7"><span class="toc-number">4.2.</span> <span class="toc-text">登录不了windows账户</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A3%8B%E9%AD%82%E8%A7%82%E5%90%8E%E6%84%9F"><span class="toc-number">5.</span> <span class="toc-text">棋魂观后感</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%90%E5%8A%9F%E7%BB%88%E7%A9%B6%E4%BC%9A%E5%AD%A4%E7%8B%AC%E2%80%94%E2%80%94%E6%97%B6%E5%85%89"><span class="toc-number">5.1.</span> <span class="toc-text">成功终究会孤独——时光</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A5%9E%E4%B9%8B%E4%B8%80%E6%89%8B%E2%80%94%E2%80%94%E8%A4%9A%E8%B5%A2"><span class="toc-number">5.2.</span> <span class="toc-text">神之一手——褚赢</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/15/2024-04-15-%E5%AE%8F%E6%A8%A1%E7%89%88/" title="2024-04-15-宏模版">2024-04-15-宏模版</a><time datetime="2024-04-14T23:54:22.000Z" title="发表于 2024-04-15 07:54:22">2024-04-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/28/2024-03-28-%E4%BC%A0%E7%9B%9B%E5%B7%A5%E4%BD%9C/" title="2024-03-28-传盛工作">2024-03-28-传盛工作</a><time datetime="2024-03-28T14:19:22.000Z" title="发表于 2024-03-28 22:19:22">2024-03-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/27/2024-03-27-My-First-Post/" title="My New Post">My New Post</a><time datetime="2024-03-27T10:56:39.000Z" title="发表于 2024-03-27 18:56:39">2024-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/03/26/2024-03-26-hello-world/" title="Hello World">Hello World</a><time datetime="2024-03-26T08:41:54.459Z" title="发表于 2024-03-26 16:41:54">2024-03-26</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2019 - 2024 By <a class="footer-bar-link" href="/" title="Ravanla" target="_blank">Ravanla</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">0</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><span class="sidebar-menu-item-title">标签</span></div></div><div id="keyboard-tips"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">打开/关闭中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift F</div></div><div class="keyContent"><div class="content">友链鱼塘</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">原版/本站右键菜单</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.cbd.int/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/01/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2019 By 安知鱼 V1.6.12",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 Ravanla 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "1285644869@qq.com";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
